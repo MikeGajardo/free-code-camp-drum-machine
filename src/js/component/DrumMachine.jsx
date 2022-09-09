@@ -2,17 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { SoundBank } from "../SoundBank";
 
-// import heater1 from "../../img/heater1.mp3";
-// import heater2 from "../../img/heater2.mp3";
-// import heater3 from "../../img/heater3.mp3";
-// import heater4 from "../../img/heater4.mp3";
-// import heater6 from "../../img/heater6.mp3";
-// import hihatclosed from "../../img/hihatclosed.mp3";
-// import hihatopen from "../../img/hihatopen.mp3";
-// import kick1 from "../../img/kick1.mp3";
-// import kicknhat from "../../img/kicknhat.mp3";
-
-
 export const DrumMachine = () => {
   const [currSound, setCurrSound] = useState(0)
 
