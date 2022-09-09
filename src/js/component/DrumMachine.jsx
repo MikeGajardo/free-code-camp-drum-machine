@@ -5,7 +5,7 @@ import { SoundBank } from "../SoundBank";
 export const DrumMachine = () => {
   const [currSound, setCurrSound] = useState(0)
 
-
+// Create a map function for each drum-pad instead of adding each div
   return (
     <div id="drum-machine">
       <div id="display"><h3>{SoundBank[currSound].description}</h3></div>
