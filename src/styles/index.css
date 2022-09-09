@@ -12,19 +12,26 @@
 */
 
 #drum-machine {
+    margin-top: 50px;
 }
 
 #display {
-    width: 1000px;
-    height: 950px;
+    text-align: center;
+}
+
+.machine {
+    width: 700px;
+    height: 600px;
     background-color: black;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 10px;
 }
 
 .drum-pad {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     background-color: grey;
-    margin: 50px;
+    margin: 40px;
+    border-radius: 10px;
 }
