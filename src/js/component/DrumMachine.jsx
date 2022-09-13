@@ -13,15 +13,15 @@ export const DrumMachine = () => {
     });
   }, []);
 
+  // Use the DOM to add a style to the drum-pad
   const styleActiveKey = (audio) => {
     audio.parentElement.style.backgroundColor = "#FF0000"
-    audio.parentElement.style.color = "#ffffff"
   }
 
+  // This function will return the drum-pad to its original colors after a certain amount of time - 300 miliseconds
   const deactivateAudio = (audio) => {
     setTimeout(() => {
       audio.parentElement.style.backgroundColor = "#808080"
-      audio.parentElement.style.color = "#ffffff"
     }, 300)
   }
 
@@ -45,41 +45,5 @@ export const DrumMachine = () => {
     );
   });
 };
-
-// <div id="drum-machine">
-//   <div id="display"><h3>{SoundBank[currSound].description}</h3></div>
-//     <div className="machine">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-sm drum-pad" id="Q" onClick={() =>
-//           setCurrSound(1)}>Q</div>
-//           <div className="col-sm drum-pad" id="W" onClick={() =>
-//           setCurrSound(2)}>W</div>
-//           <div className="col-sm drum-pad" id="E" onClick={() =>
-//           setCurrSound(3)}>E</div>
-//       </div>
-//       </div>
-//       <div className="container">
-//         <div className="row">
-//         <div className="col-sm drum-pad" id="A" onClick={() =>
-//           setCurrSound(4)}>A</div>
-//         <div className="col-sm drum-pad" id="S" onClick={() =>
-//           setCurrSound(5)}>S</div>
-//         <div className="col-sm drum-pad" id="D" onClick={() =>
-//           setCurrSound(6)}>D</div>
-//       </div>
-//       </div>
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-sm drum-pad" id="Z" onClick={() =>
-//           setCurrSound(7)}>Z</div>
-//           <div className="col-sm drum-pad" id="X" onClick={() =>
-//           setCurrSound(8)}>X</div>
-//           <div className="col-sm drum-pad" id="C" onClick={() =>
-//           setCurrSound(9)}>C</div>
-//         </div>
-//       </div>
-//     </div>
-// </div>
 
 export default DrumMachine;
