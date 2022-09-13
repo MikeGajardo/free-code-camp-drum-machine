@@ -20,8 +20,8 @@ export const DrumMachine = () => {
 
   const deactivateAudio = (audio) => {
     setTimeout(() => {
-      audio.parentElement.style.backgroundColor = "808080"
-      audio.parentElement.style.color = "#000000"
+      audio.parentElement.style.backgroundColor = "#808080"
+      audio.parentElement.style.color = "#ffffff"
     }, 300)
   }
 
@@ -31,8 +31,8 @@ export const DrumMachine = () => {
     styleActiveKey(audio)
     audio.currentTime = 0;
     audio.play();
-    deactivateAudio(audio)
     setActiveSound(key)
+    deactivateAudio(audio)
   };
 
   // Map of each div drum pad 
