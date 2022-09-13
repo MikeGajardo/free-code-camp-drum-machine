@@ -1,8 +1,8 @@
 export const SoundBank = [
-    {
-        sound: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
-        description: " "
-    },
+    // {
+    //     sound: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
+    //     description: " "
+    // },
     {
         keyCode: 81,
         key: "Q",
@@ -54,7 +54,7 @@ export const SoundBank = [
     {
         keyCode: 67,
         key: "C",
-        sound: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
+        sound: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
         description: "Closed Hi-hat"
     },
 ]

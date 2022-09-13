@@ -11,6 +11,10 @@
 
 */
 
+.row {
+    margin-left: 0px;
+}
+
 #drum-machine {
     margin-top: 50px;
 }
@@ -21,7 +25,7 @@
 }
 
 .machine {
-    width: 700px;
+    width: 600px;
     height: 600px;
     background-color: black;
     margin-right: auto;
