@@ -8,17 +8,30 @@ export const DrumMachine = () => {
   useEffect(() => {
     document.addEventListener("keydown", (event) => {
       console.log(event.key)
-
   // Key must be uppercase to match our data
       play(event.key.toUpperCase())
     });
   }, []);
 
+  const styleActiveKey = (audio) => {
+    audio.parentElement.style.backgroundColor = "#FF0000"
+    audio.parentElement.style.color = "#ffffff"
+  }
+
+  const deactivateAudio = (audio) => {
+    setTimeout(() => {
+      audio.parentElement.style.backgroundColor = "808080"
+      audio.parentElement.style.color = "#000000"
+    }, 300)
+  }
+
   // The play function that we want to envoke on-click and on keydown to play our audio
   const play = (key) => {
     const audio = document.getElementById(key);
+    styleActiveKey(audio)
     audio.currentTime = 0;
     audio.play();
+    deactivateAudio(audio)
     setActiveSound(key)
   };
 
