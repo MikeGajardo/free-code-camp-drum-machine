@@ -8,11 +8,11 @@ import DrumMachine from "../component/DrumMachine.jsx";
 //create your first component
 const Home = () => {
 	const [setSound, setActiveSound] = useState('')
-	const play = (key) => {
+	const play = (key, sound) => {
 		const audio = document.getElementById(key);
 		audio.currentTime = 0;
 		audio.play();
-		setActiveSound(key)
+		setActiveSound(sound)
 	  };
   return (
     <div id="drum-machine">

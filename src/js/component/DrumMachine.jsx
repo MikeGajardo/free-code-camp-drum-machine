@@ -3,12 +3,11 @@ import { useEffect, useState } from "react";
 import { SoundBank } from "../SoundBank";
 
 export const DrumMachine = () => {
-  const [setSound, setActiveSound] = useState('')
   // Listen to the keydown event 
   useEffect(() => {
     document.addEventListener("keydown", (event) => {
       console.log(event.key)
-  // Key must be uppercase to match our data
+  // Key must be uppercase to match our data bank
       play(event.key.toUpperCase())
     });
   }, []);
@@ -31,7 +30,6 @@ export const DrumMachine = () => {
     styleActiveKey(audio)
     audio.currentTime = 0;
     audio.play();
-    setActiveSound(key)
     deactivateAudio(audio)
   };
 
